@@ -57,6 +57,7 @@
     <string name="proceed">Continue</string>
     <string name="unlock">Unlock</string>
     <string name="scan">Scan</string>
+    <string name="simulate">Simulate</string>
     <string name="browser">Browser</string>
     <string name="retry">Retry</string>
     <string name="save">Save</string>

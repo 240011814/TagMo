@@ -56,6 +56,7 @@
     <string name="no">No</string>
     <string name="save">保存</string>
     <string name="write">写入</string>
+    <string name="simulate">模拟</string>
     <string name="cancel">取消</string>
     <string name="start">开始</string>
     <string name="delete">删除</string>

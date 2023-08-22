@@ -12,6 +12,7 @@ object NFCIntent {
 
     const val ACTION_EDIT_COMPLETE = BuildConfig.APPLICATION_ID + ".EDIT_COMPLETE"
     const val ACTION_SCAN_TAG = BuildConfig.APPLICATION_ID + ".SCAN_TAG"
+    const val ACTION_SIMULATE = BuildConfig.APPLICATION_ID + ".SIMULATE"
     const val ACTION_WRITE_TAG_FULL = BuildConfig.APPLICATION_ID + ".WRITE_TAG_FULL"
     const val ACTION_WRITE_TAG_RAW = BuildConfig.APPLICATION_ID + ".WRITE_TAG_RAW"
     const val ACTION_WRITE_TAG_DATA = BuildConfig.APPLICATION_ID + ".WRITE_TAG_DATA"

@@ -62,6 +62,7 @@
     <string name="save">儲存</string>
     <string name="cache">快取</string>
     <string name="write">寫入</string>
+    <string name="simulate">模拟</string>
     <string name="erase">抹除</string>
     <string name="cancel">取消</string>
     <string name="accept">接受</string>

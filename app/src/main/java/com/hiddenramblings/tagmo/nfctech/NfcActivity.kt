@@ -126,6 +126,7 @@ class NfcActivity : AppCompatActivity() {
         when (mode) {
             NFCIntent.ACTION_WRITE_TAG_RAW,
             NFCIntent.ACTION_WRITE_TAG_FULL,
+            NFCIntent.ACTION_SIMULATE,
             NFCIntent.ACTION_WRITE_TAG_DATA -> {
                 if (hideBankPicker) {
                     bankPicker.isGone = true
@@ -158,6 +159,7 @@ class NfcActivity : AppCompatActivity() {
             NFCIntent.ACTION_WRITE_TAG_RAW -> setTitle(R.string.write_raw)
             NFCIntent.ACTION_WRITE_TAG_FULL -> setTitle(R.string.write_auto)
             NFCIntent.ACTION_WRITE_TAG_DATA -> setTitle(R.string.update_tag)
+            NFCIntent.ACTION_SIMULATE -> setTitle(R.string.simulate)
             NFCIntent.ACTION_WRITE_ALL_TAGS -> setTitle(R.string.write_collection)
             NFCIntent.ACTION_BACKUP_AMIIBO -> setTitle(R.string.amiibo_backup)
             NFCIntent.ACTION_ERASE_ALL_TAGS -> setTitle(R.string.erase_collection)

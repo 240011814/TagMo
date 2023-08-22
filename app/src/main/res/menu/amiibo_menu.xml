@@ -12,6 +12,10 @@
         android:title="@string/write"
         app:showAsAction="always"/>
     <item
+        android:id="@+id/mnu_simulate"
+        android:title="@string/simulate"
+        app:showAsAction="ifRoom|withText"/>
+    <item
         android:id="@+id/mnu_save"
         android:title="@string/save"
         app:showAsAction="always"/>

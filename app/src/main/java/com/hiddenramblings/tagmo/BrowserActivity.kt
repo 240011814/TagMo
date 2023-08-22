@@ -1069,6 +1069,7 @@ class BrowserActivity : AppCompatActivity(), BrowserSettingsListener,
         toolbar.menu.findItem(R.id.mnu_share_qr).isVisible = available
         toolbar.menu.findItem(R.id.mnu_validate).isVisible = available
         toolbar.menu.findItem(R.id.mnu_ignore_tag_id).isVisible = available
+        toolbar.menu.findItem(R.id.mnu_simulate).isVisible = available
         toolbar.menu.findItem(R.id.mnu_random).apply {
             isVisible = null != amiiboFile
         }
@@ -1151,6 +1152,15 @@ class BrowserActivity : AppCompatActivity(), BrowserSettingsListener,
                         action = NFCIntent.ACTION_WRITE_TAG_DATA
                         putExtras(Bundle().apply {
                             putBoolean(NFCIntent.EXTRA_IGNORE_TAG_ID, ignoreTagId)
+                            putByteArray(NFCIntent.EXTRA_TAG_DATA, tagData)
+                        })
+                    })
+                    return@setOnMenuItemClickListener true
+                }
+                R.id.mnu_simulate -> {
+                    onUpdateTagResult.launch(scan.apply {
+                        action = NFCIntent.ACTION_WRITE_TAG_FULL
+                        putExtras(Bundle().apply {
                             putByteArray(NFCIntent.EXTRA_TAG_DATA, tagData)
                         })
                     })
